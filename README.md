@@ -90,30 +90,6 @@ No complicated setup required.
 | Go to line | `Ctrl+G` |
 | Zoom in / out / reset | `Ctrl++` / `Ctrl+-` / `Ctrl+0` (or `Ctrl` + mouse wheel) |
 
-## 🔨 Building from Source
-
-You need Visual Studio with the C++ desktop workload and CMake.
-
-1. Open a **Developer Command Prompt for Visual Studio**.
-2. Go to the project folder and run:
-
-```
-cmake -S . -B build
-cmake --build build --config Release --target TinyPad
-```
-
-3. The executable is at `build\Release\TinyPad.exe`.
-
-The unit tests (`test_buffer`, `test_undo`, `test_file_io`) use `assert`, so build and run them in Debug:
-
-```
-cmake --build build --config Debug
-build\Debug\test_buffer.exe
-build\Debug\test_undo.exe
-build\Debug\test_file_io.exe
-```
-
-Want a different file extension? Change the single line in `doc_ext.h` and rebuild.
 
 ## 🚧 Development Status
 
